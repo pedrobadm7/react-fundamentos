@@ -5,8 +5,6 @@ import { ThemeProvider } from "../context/ThemeContext";
 
 import { Title } from "./styles";
 
-import styles from './styles.scss';
-
 const App = () => {
   const [posts, setPosts] = useState([
     {
@@ -59,7 +57,7 @@ const App = () => {
     <ThemeProvider>
       <Header title="JStack's Blog">
         <Title as="h2">
-          Posts da semana 
+          Posts da semana
           <button onClick={handleRefresh}>Atualizar</button>
         </Title>
       </Header>
